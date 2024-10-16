@@ -9,7 +9,9 @@ WORKDIR /sample-app
 
 COPY . /sample-app/
 
-RUN pip install -r requirements.txt && \
+RUN pip cache purge
+    pip install --upgrade pip setuptools
+    pip install -r requirements.txt && \
     pip install -r requirements-server.txt
 
 ENV LC_ALL="C.UTF-8"
