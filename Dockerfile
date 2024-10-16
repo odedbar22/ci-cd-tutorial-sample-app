@@ -9,8 +9,8 @@ WORKDIR /sample-app
 
 COPY . /sample-app/
 
-RUN pip3 install -r requirements.txt && \
-    pip3 install -r requirements-server.txt
+RUN pip install -r requirements.txt && \
+    pip install -r requirements-server.txt
 
 ENV LC_ALL="C.UTF-8"
 ENV LANG="C.UTF-8"
