@@ -10,9 +10,9 @@ WORKDIR /sample-app
 COPY . /sample-app/
 
 COPY requirements.txt requirements.txt
-RUN python -m pip install -r requirements.txt
-RUN pip cache purge
-RUN python -m pip install -r requirements-server.txt
+RUN python3 -m pip install -r requirements.txt
+RUN python3 -m pip cache purge
+RUN python3 -m pip install -r requirements-server.txt
 
 ENV LC_ALL="C.UTF-8"
 ENV LANG="C.UTF-8"
