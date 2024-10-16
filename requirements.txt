@@ -1,5 +1,6 @@
 Flask==2.2.2
 Flask-Migrate==2.5.3
 Flask-SQLAlchemy==2.5.1
+SQLAlchemy==1.4.47
 Werkzeug==2.2.2
 Jinja2==3.0.3
